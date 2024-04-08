@@ -107,14 +107,18 @@ class _ViewpageState extends State<Viewpage> {
                       height: 40,
                       child: ElevatedButton(
                         onPressed: () {
-                         
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
                               action: SnackBarAction(
                                   label: 'Undo', onPressed: () {}),
                               duration: Durations.extralong4,
                               content: Center(
-                                child: Text('Added To Cart SuccessFully'),
+                                child: Text(
+                                  'Added To Cart Successfully',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
                               ),
                             ),
                           );

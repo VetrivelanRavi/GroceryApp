@@ -3,9 +3,13 @@ class Model {
   String? category;
   double? price;
   String? image;
-  void Function()? onPressed;
 
-  Model({this.name, this.category, this.price, this.image, this.onPressed});
+  Model({
+    this.name,
+    this.category,
+    this.price,
+    this.image,
+  });
 
   Model.fromJson(Map<String, dynamic> json) {
     name = json['name'];
