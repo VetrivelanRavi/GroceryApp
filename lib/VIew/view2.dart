@@ -1,8 +1,6 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
-import 'package:grocery_app_08_04/Model/model.dart';
-import 'package:grocery_app_08_04/ViewModel/viewmodel.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});

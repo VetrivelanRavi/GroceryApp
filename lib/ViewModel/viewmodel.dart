@@ -23,11 +23,6 @@ class ViewModel {
   }
 
   void _addCart(Model model) {
-    if (cartList.contains(model)) {
-      cartList.remove(model);
-    } else {
-      cartList.add(model);
-    }
-    print(cartList);
+    cartList.add(Model());
   }
 }
