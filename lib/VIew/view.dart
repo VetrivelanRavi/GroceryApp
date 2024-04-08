@@ -1,7 +1,5 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, sort_child_properties_last, prefer_const_literals_to_create_immutables, unnecessary_nullable_for_final_variable_declarations
 
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:grocery_app_08_04/Model/model.dart';
@@ -17,8 +15,6 @@ class Viewpage extends StatefulWidget {
 
 class _ViewpageState extends State<Viewpage> {
   late Future<List<Model>> _modelFuture;
-
-  late void _addCart = ViewModel().cartList;
 
   @override
   void initState() {
@@ -111,7 +107,7 @@ class _ViewpageState extends State<Viewpage> {
                       height: 40,
                       child: ElevatedButton(
                         onPressed: () {
-                          _addCart;
+                         
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
                               action: SnackBarAction(
